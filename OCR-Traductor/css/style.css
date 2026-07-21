@@ -1,0 +1,142 @@
+body{
+    font-family: Arial, sans-serif;
+    padding:20px;
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7fafc;
+    transition: background-color 0.6s ease;
+}
+body.cambiar-fondo {
+    background-color: #1a202c; 
+    color: #f6f2f2;
+  }
+/*
+* {
+    outline: 1px solid red;
+}
+/**/
+.menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+   
+}
+
+#Confiicono {
+   
+    margin-left: auto;
+    display: inline-block;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+i.bx {
+    cursor: pointer;
+    font-size: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.bloque_padre{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    width: 100%;
+    max-width: 1240px; 
+    margin: 50px auto 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#resultado_leer,#traduccion_traductor
+{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%; 
+    max-width: 600px;
+    height: 250px;
+    box-sizing: border-box;
+    padding-top: 25px;
+    position: relative;
+   
+    
+}
+
+#boton_leer,#boton_traductor
+{
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+  
+}
+
+#option_leer,#destino_traductor
+{
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+.caja_configuracion {
+    position: absolute;
+    right: 20px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding: 15px;
+    top: 90px;
+    background: #f7f4f4;
+    border-radius: 10%;
+    border: 1px solid #000000;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1); 
+    transition: 
+        background-color 0.6s ease, 
+        border-color 0.6s ease,
+        opacity 0.5s ease, 
+        transform 0.5s ease, 
+        visibility 0.5s ease;
+}
+
+.caja_configuracion.caja_oscuro {
+    background: #1a202c;
+    border: 1px solid #fcfcfc;
+   
+}   
+.caja_configuracion.aparecer {
+    opacity: 1;
+    visibility: visible;         
+    transform: scale(1) translateX(-10px); 
+    
+}
+
+.caja_configuracion h2
+{
+display: flex;
+align-items: center;
+
+}
+
+#caja_fondo
+{
+    background: #f6f2f2;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-left: auto;
+    cursor: pointer;
+   
+}
+#caja_fondo.color
+
+{
+    background:rgb(0, 0, 0) ;
+}
+
+
+
+

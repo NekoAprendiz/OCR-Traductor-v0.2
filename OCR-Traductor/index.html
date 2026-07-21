@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>OCR Traductor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+
+</head>
+<body>
+   
+    <div class="menu">
+        <i class="bx bx-menu">  </i>
+        <h1>OCR Traductor</h1>
+        <i class="bx bx-cog" id="Confiicono" > </i>
+    </div>
+   
+     <div class="archivosimg">
+        <input type="file" id="imagen">
+     </div>
+    <div class="bloque_padre">
+
+    <div class="bloque_lectura">
+            <button id="boton_leer">Leer Texto</button>
+            <select id="option_leer">
+                <option value="es">Español</option>
+                <option value="en">Inglés</option>
+            </select>
+       
+        <textarea id="resultado_leer"></textarea>
+    </div>
+       
+<div class="bloque_traductor">
+   
+        <button id="boton_traductor">Traducir</button> 
+        <select id="destino_traductor">
+            <option value="en">Inglés</option>
+            <option value="es">Español</option>
+        </select>
+       
+    <textarea id="traduccion_traductor"></textarea>
+</div>
+       
+</div>
+  
+    
+
+    <div class="confi_modos">
+        <div class="caja_configuracion" id="caja_configuracion">
+            <h1>Configuración</h1>
+            <h2 id="caja_oscuro">Modo oscuro
+                <button id="caja_fondo"></button>
+            </h2>
+           
+            <h2 >Modo selección </h2>
+            <h2 >Modo una tecla</h2>
+        </div>
+    </div>
+
+
+    
+
+
+    <script src="https://unpkg.com/tesseract.js@5/dist/tesseract.min.js"></script>
+    <script src="script/script.js"></script>
+
+</body>
+</html>
